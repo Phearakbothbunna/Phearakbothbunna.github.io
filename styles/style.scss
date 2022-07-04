@@ -21,6 +21,8 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
+    // x, y, blur, opacity is 0.3
+    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3)
 
 }
 
@@ -98,4 +100,52 @@ section{
 .sec5{
     display: none;
     transform: translateY(0)scale(1);
+}
+
+// Controls
+.controls{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+
+    .active-btn{
+        background-color: rgb(35, 194, 43) !important;
+        transition-delay: .4s ease-in-out;
+        i{
+            color: var(--color-white)!important;
+        }
+    }
+
+    .control{
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-grey-4);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // Top & Bottom 0.7
+        // Left & Right 0
+        margin: .7rem 0;
+        box-shadow: var(--box-shadow-1);
+
+        i{
+            font-size: 1.2rem;
+            color: var(--color-secondary);
+            // Pointer events NONE: when click does not do anything
+            pointer-events: none;
+
+        }
+
+
+        
+    }
 }
