@@ -17,20 +17,53 @@
 </head>
 
 <body class="main-content">
-    <header class="section sec1 header active">
-        
+    <header class="section sec1 header active" id="home">
+        <div class="header-conten">
+
+            <div class="left-header">
+
+                <div class="h-shape"></div>
+
+                <div class="image">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+
+            </div>
+            
+            <div class="right-header">
+
+                <h1 class="name">
+
+                    Hi, I'm <span>Phearak Both Bunna.</span> 
+                    A CS major Student @ Washington State University
+
+                </h1>
+
+                <p>
+                    I'm a junior standing undergraduate student who's passionate about technologies and innovations.
+                    Currently seeking summer internship opportunities for 2023.
+                </p>
+
+                <a href="" class="main-btn">
+                    <span class="btn-text">Download Resume</span>
+                    <i class="fa-solid fa-download"></i>
+                </a>
+                
+            </div>
+
+        </div>
     </header>
 
     <main>
-        <section class="section sec2 about"></section>
-        <section class="section sec3 portfolio"></section>
-        <section class="section sec4 contact"></section>
+        <section class="section sec2 about" id="about"></section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 contact" id="contact"></section>
     </main>
 
     
     <div class="controls">
 
-        <div class="control control-1 active-btn">
+        <div class="control control-1 active-btn" data-id="home">
             <i class="fa-solid fa-house"></i>
         </div>
             
@@ -47,7 +80,10 @@
             <i class="fa-solid fa-envelope"></i>
         </div>
         
-
     </div>    
+
+    <script src="app.js">
+
+    </script>
 </body>
 </html>

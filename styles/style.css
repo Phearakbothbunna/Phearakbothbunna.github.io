@@ -65,21 +65,41 @@ section {
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #9711a8;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #e7630c;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #0e11c0;
 }
 
-.sec5 {
-  display: none;
-  transform: translateY(0) scale(1);
+.active {
+  display: block;
+  -webkit-animation: scaleAnim 1s ease-in-out;
+          animation: scaleAnim 1s ease-in-out;
+}
+@-webkit-keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 .controls {
