@@ -26,9 +26,6 @@
 
 }
 
-
-
-
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-primary);
@@ -116,6 +113,7 @@ section{
     }
 }
 
+
 // Controls
 .controls{
     position: fixed;
@@ -161,3 +159,64 @@ section{
         
     }
 }
+
+
+// Header content
+.header-content{
+    // Use 2 column-grid
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    
+    .left-header{
+        display: flex;
+        align-items: center;
+        position:relative;
+
+        .h-shape{
+            transition: all .4s ease-in-out;
+            width: 35%;
+            height: 100%;
+            background-color: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+
+        }
+
+        .image{
+            width: 35%;
+            height: 80%;
+            border-radius: var(--br-sm-2);
+            margin-left: 4rem;
+            
+        }   
+    }
+
+    .right-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 18rem;
+
+        .name{
+            span{
+                font-size: 3rem;
+                color: #27ae60;
+            }
+        }
+        
+        .backgr{
+            width: 20%;
+            height: 105;
+        }
+
+    }
+}
+
+
+
+// Indepedent components
+
+
